@@ -1,0 +1,125 @@
+{
+  "name": "tinypngpro",
+  "version": "2.0.1",
+  "description": "An command line tool for tinypng.com",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "type": "module",
+  "exports": {
+    "require": {
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "default": "./dist/index.mjs"
+    }
+  },
+  "bin": {
+    "tinypngpro": "./dist/index.cjs"
+  },
+  "files": [
+    "dist",
+    "locales"
+  ],
+  "scripts": {
+    "dev": "pkgroll --watch",
+    "build": "pkgroll --clean-dist --minify",
+    "prepare": "pnpm build",
+    "release": "pnpm build && release-it"
+  },
+  "release-it": {
+    "git": {
+      "tag": true,
+      "commitMessage": "release: tinypngpro ${version}"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harichu/tinypngpro.git"
+  },
+  "keywords": [
+    "compress",
+    "images",
+    "image",
+    "jpg",
+    "png",
+    "pictures",
+    "tiny",
+    "tinypng",
+    "tinypng.com",
+    "image-compress",
+    "compress images",
+    "images compress",
+    "minifier",
+    "image mini",
+    "picture",
+    "photo",
+    "minify image",
+    "image minify",
+    "image",
+    "image minify",
+    "compression",
+    "image compression",
+    "compression image",
+    "compress",
+    "compress image",
+    "image minify size",
+    "image compress size",
+    "image size minify",
+    "jpeg compression",
+    "jpg compression",
+    "png compression",
+    "jpeg",
+    "jpg",
+    "png",
+    "jpeg minify",
+    "jpg minify",
+    "png minify",
+    "compress jpeg",
+    "compress jpg",
+    "compress png",
+    "jpeg compress",
+    "jpg compress",
+    "png compress",
+    "webp",
+    "image min",
+    "shrinking",
+    "compression",
+    "cli",
+    "tinypngpro"
+  ],
+  "author": "harichu <npm@harichu.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harichu/tinypngpro/issues"
+  },
+  "homepage": "https://github.com/harichu/tinypngpro#readme",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/mime-types": "^2.1.4",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^22.5.0",
+    "pkgroll": "^2.5.1",
+    "release-it": "^17.6.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "cli-table3": "^0.6.5",
+    "compressing": "^1.10.1",
+    "fast-glob": "^3.3.2",
+    "file-type": "16.5.4",
+    "fs-extra": "^11.2.0",
+    "i18next": "^23.14.0",
+    "i18next-fs-backend": "^2.3.2",
+    "mime-types": "^2.1.35",
+    "minimatch": "^10.0.1",
+    "minimist": "^1.2.8",
+    "nanospinner": "^1.1.0",
+    "picocolors": "^1.0.1",
+    "pretty-size": "^2.0.0",
+    "rslog": "^1.2.2"
+  }
+}

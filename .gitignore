@@ -1,0 +1,13 @@
+*.log*
+.cache
+.DS_Store
+.idea
+.vscode
+dist
+image
+
+# npm
+node_modules
+package-lock.json
+pnpm-lock.yaml
+

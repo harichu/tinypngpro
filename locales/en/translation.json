@@ -1,0 +1,17 @@
+{
+  "address": "Image Address",
+  "compression-details": "Compression Results",
+  "original-size": "Original Size",
+  "compressed-size": "Compressed Size",
+  "compression-ratio": "Compression Ratio",
+  "start-generating-archive": "Generating Archive",
+  "generate-archive-success": "Archive generated successfully. Click to download.",
+  "generate-archive-failure": "Failed to generate archive. Please try again later.",
+  "file-not-found": "File not found. Please check the image address.",
+  "start-compressing-image": "Compressing Image",
+  "compress-image-complete": "Image compressed completely.",
+  "compress-image-failure": "Failed to compress image. Please try again later.",
+  "compression-failure": "Compression failed.",
+  "upload-failure": "File upload failed.",
+  "image-processing-failure": "Image processing failed. Please try again later."
+}
